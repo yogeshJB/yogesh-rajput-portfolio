@@ -1,0 +1,50 @@
+<nav class="fixed top-0 left-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-dark-700/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0 cursor-pointer">
+                <a routerLink="/"
+                    class="text-2xl font-display font-bold text-white tracking-tight flex items-center gap-2">
+                    <lucide-icon name="code" class="text-primary w-6 h-6"></lucide-icon>
+                    <span class="text-primary">Dev</span>Portfolio
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a routerLink="/" fragment="home"
+                        class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Home</a>
+                    <a routerLink="/" fragment="projects"
+                        class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Projects</a>
+                    <a routerLink="/" fragment="about"
+                        class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">About</a>
+                    <a routerLink="/" fragment="contact"
+                        class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button (click)="toggleMobileMenu()"
+                    class="text-gray-300 hover:text-white p-2 rounded-md focus:outline-none">
+                    <lucide-icon [name]="isMobileMenuOpen ? 'x' : 'menu'" class="w-6 h-6"></lucide-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div *ngIf="isMobileMenuOpen" class="md:hidden bg-dark-900 border-b border-dark-700">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a (click)="closeMobileMenu()" routerLink="/" fragment="home"
+                class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+            <a (click)="closeMobileMenu()" routerLink="/" fragment="projects"
+                class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+            <a (click)="closeMobileMenu()" routerLink="/" fragment="about"
+                class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            <a (click)="closeMobileMenu()" routerLink="/" fragment="contact"
+                class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        </div>
+    </div>
+</nav>
