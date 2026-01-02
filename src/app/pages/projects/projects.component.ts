@@ -25,6 +25,14 @@ export class ProjectsComponent {
       github: 'https://github.com/yogeshJB/InstaFetch-Pro'
     },
     {
+      title: 'Resilient Video Recording Application',
+      description: 'A full-stack application designed to record Camera & Microphone input in the browser and upload it reliably to a Node.js backend. This project emphasizes network resilience, low-latency streaming, and user experience under unstable conditions.',
+      image: 'from-red-500 to-violet-500',
+      tags: ['React.js', 'Node.js', 'TypeScript'],
+      link: '#',
+      github: 'https://github.com/yogeshJB/resilient-video-recorder'
+    },
+    {
       title: 'Online Exam Web Application',
       description: 'A full-featured online store with cart functionality, user authentication, and payment integration.',
       image: 'from-blue-500 to-cyan-500',
