@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { LucideAngularModule, Menu, X, Code, User, Mail, Folder, Linkedin, Github, ExternalLink, Briefcase, GraduationCap, ArrowRight, MapPin } from 'lucide-angular';
+import { LucideAngularModule, Menu, X, Code, User, Mail, Folder, Linkedin, Github, ExternalLink, Briefcase, GraduationCap, ArrowRight, MapPin, ArrowDownCircle } from 'lucide-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +25,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LucideAngularModule.pick({ Menu, X, Code, User, Mail, Folder, Linkedin, Github, ExternalLink, Briefcase, GraduationCap, ArrowRight, MapPin }),
+    LucideAngularModule.pick({ Menu, X, Code, User, Mail, Folder, Linkedin, Github, ExternalLink, Briefcase, GraduationCap, ArrowRight, MapPin, ArrowDownCircle }),
     FormsModule
   ],
   providers: [],
